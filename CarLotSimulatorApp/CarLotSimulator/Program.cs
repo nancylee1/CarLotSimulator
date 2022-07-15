@@ -68,7 +68,11 @@ namespace CarLotSimulator
                 car.MakeHonkNoise(car.HonkNoise);
                 Console.WriteLine("________________\n");
             }
-            Console.WriteLine(CarLot.numberOfCars++);
+            //Exercise 2 of Static Exercise:
+            //Building on our car lot simulator project, create a CarLot class with a static field called numberOfCars.
+            //Have this number only increment when in our program we create a new Car.
+            //From there create 3 cars in the Main() and then each time you create a car, do a Console.WriteLine() printing the current number of cars in the car lot.
+            Console.WriteLine($"The total number of car(s) in the Parking Lot = {CarLot.numberOfCars++}");
         }
     }
 }
