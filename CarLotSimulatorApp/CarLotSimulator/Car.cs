@@ -20,9 +20,9 @@ namespace CarLotSimulator
     {
         public Car()
         {
-
+            CarLot.numberOfCars++;
         }
- 
+
 
         public Car(int carYear, string carMake, string carModel, string carEngineNoise, string carHonkNoise, bool carIsDriveable) // constructor
         {
@@ -32,6 +32,7 @@ namespace CarLotSimulator
             EngineNoise = carEngineNoise;   
             HonkNoise = carHonkNoise;   
             IsDriveable = carIsDriveable;
+            CarLot.numberOfCars++;
         }
         //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable 
         public int Year { get; set; }

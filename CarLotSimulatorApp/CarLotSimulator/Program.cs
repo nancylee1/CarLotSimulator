@@ -23,10 +23,11 @@ namespace CarLotSimulator
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
-            var carLotList = new CarLot(); 
+            var carLotList = new CarLot();
+             
 
 
-            var car1 = new Car()   // 1st way 
+            var car1 = new Car()   // 1st way is called "Object Initializing Syntax"
             {
                 Year = 2022,
                 Make = "Hyundai",
@@ -37,7 +38,7 @@ namespace CarLotSimulator
             };
            
 
-            var car2 = new Car();  // 2nd way
+            var car2 = new Car();  // 2nd way 
             car2.Year = 1996;
             car2.Make = "Mercedes";
             car2.Model = "C-Class";
@@ -46,7 +47,8 @@ namespace CarLotSimulator
             car2.IsDriveable = false;
 
 
-            var car3 = new Car(2023, "BMW", "5-Series", "Vrooom", "Beep Beep", true); // 3rd way
+            var car3 = new Car(2023, "BMW", "5-Series", "Vrooom", "Beep Beep", true); // 3rd way is called "Parameterized Constructor"
+            
 
             //*************BONUS X 2*************//
 
@@ -66,6 +68,7 @@ namespace CarLotSimulator
                 car.MakeHonkNoise(car.HonkNoise);
                 Console.WriteLine("________________\n");
             }
+            Console.WriteLine(CarLot.numberOfCars++);
         }
     }
 }
